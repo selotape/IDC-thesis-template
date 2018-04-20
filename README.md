@@ -11,4 +11,4 @@ python ./merge_pdfs.py thesis.pdf hebrew_cover.pdf
 # SUBMIT!
 ```
 
-Congrats on completing your MSc thesis!!
+Congrats on completing your MSc thesis!!🎉🎊
