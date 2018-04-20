@@ -1,0 +1,2 @@
+PyPdf2
+click
