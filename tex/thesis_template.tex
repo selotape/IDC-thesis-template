@@ -11,21 +11,13 @@
   \monthname[\THEMONTH], \THEYEAR}
 
 
-%\usepackage{polyglossia}
-%\setmainlanguage{english}
-%\setotherlanguage{hebrew}
-
-
 
 \usepackage{mathptmx}
-%\setmainfont{Times New Roman}
 
-%% WIP %%
-%\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
-%\DefineBibliographyStrings{english}{%
-%	references = {Bibliography}
-%}
-%\addbibresource{bibliography.bib}
+% Two lines from genres
+\def\@cite#1#2{(#1\if@tempswa , #2\fi)}
+\def\@biblabel#1{}
+
 
 
 \begin{document}
@@ -79,16 +71,21 @@ Abstract-goes-here
 ...
 
 \section{Main Body of Work...}
-... cite original works \cite{Original}
+... your work goes here 
+
+(citation to make bibliography compile - \cite{GUTEETAL09,KAMMETAL17,KAMMETAL18})
+
+
+
+\newpage
+
+\section{References}
+\renewcommand*{\refname}{ }
+\bibliographystyle{mbe}
+\bibliography{bibliography}
 
 
 \newpage
 
-Here should go Bibliography
-%\printbibliography[heading=bibintoc]
-
-\newpage
-
-%\section*{\hfill} \begin{hebrew} {תקציר} \end{hebrew}
 
 \end{document}
