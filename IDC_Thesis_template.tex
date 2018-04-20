@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+
+%\usepackage{polyglossia}
+%\setmainlanguage{english}
+%\setotherlanguage{hebrew}
+
+
+
+\usepackage{mathptmx}
+%\setmainfont{Times New Roman}
+
+%% WIP %%
+%\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+%\DefineBibliographyStrings{english}{%
+%	references = {Bibliography}
+%}
+%\addbibresource{bibliography.bib}
+
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.4\textwidth]{IDC_logo}\par\vspace{2cm}
+	{\huge The Interdiciplinary Center, Herzliya \par}
+	{\Large Efi Arazi School of Computer Science \par}
+	{\Large M.Sc. Program - Research Track \par}
+	
+	\vspace{1cm}
+	
+	\vspace{1.5cm}
+	{\Huge Title of Thesis\par}
+	\vspace{3cm}
+	{\large by\par}
+	{\large\bfseries Student Name\par}
+	
+	\vspace{2cm}
+	{M.Sc. dissertation, submitted in partial fulfillment of the requirements\par}
+	{for the M.Sc. degree, research track, School of Computer Science\par}
+	{The Interdisciplinary Center, Herzliya}
+	
+	\vfill
+	
+	% Bottom of the page
+	{\large \monthyeardate\today \par}
+	
+\end{titlepage}
+
+\newpage
+
+This work was carried out under the supervision of Prof./Dr. XXXX from the Efi Arazi School of Computer Science, The	Interdiciplinary Center, Herzliya.
+
+\newpage
+
+\section*{Abstract}
+Abstract-goes-here	
+
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+...
+
+\section{Previous Works}
+...
+
+\section{Main Body of Work...}
+... cite original works \cite{Original}
+
+
+\newpage
+
+Here should go Bibliography
+%\printbibliography[heading=bibintoc]
+
+\newpage
+
+%\section*{\hfill} \begin{hebrew} {תקציר} \end{hebrew}
+
+\end{document}
