@@ -1,4 +1,4 @@
-# IDC Thesis Template for CS grad students
+# IDC thesis template for CS grad students
 
 ```bash
 git clone git@github.com:selotape/IDC-thesis-template.git
