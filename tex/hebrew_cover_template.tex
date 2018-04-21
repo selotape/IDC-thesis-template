@@ -1,26 +1,72 @@
-\documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
+% XeLaTeX!
+% ============================================================ %
+% HEBREW support via polyglossia %
+% ============================================================ %
+\documentclass[12pt]{report} 
+\usepackage[utf8x]{inputenc}
+\usepackage[english,hebrew]{babel}
+\usepackage{hebfont}
 
-
-\usepackage{datetime}
-\newdateformat{monthyeardate}{%
-  \monthname[\THEMONTH], \THEYEAR}
-
-
-%\usepackage{polyglossia}
-%\setmainlanguage{english}
-%\setotherlanguage{hebrew}
-
-
-
-\usepackage{mathptmx}
-
-
+\usepackage{polyglossia}
+\setmainfont{TeX Gyre Termes}
+\newfontfamily\hebrewfont{TeX Gyre Termes}
+\defaultfontfeatures{Mapping=tex-text, Scale=MatchLowercase}
+\setdefaultlanguage{english}
+\setotherlanguage{hebrew}
+%\newfontfamily\hebrewfont[Script=Hebrew]{Times New Roman}
+% Use \begin{hebrew} block of text \end{hebrew} for paragraphs.
+% Use \texthebrew{ } and \textenglish{ } for short texts.
+% ============================================================ %
 
 \begin{document}
-TODO
+
+\section*{\hfill \begin{hebrew}{תקציר}\end{hebrew}}
+\begin{hebrew}
+משפחות של פונקציות גיבוב נקראות כמעט $k$ בלתי תלויות אם ההתפלגות של הפלטים שלהן על פני כל קבוצה של $k$ קלטים שונים קרובה להתפלגות האחידה בנורמה $L_1$; תכונה זו נקראת גם אי-תלות מוגבלת.
+תכונה קרובה לכך היא זו הנקראת כמעט $k$ חוסר-הטיה, המוגדרת ע"י כך שההתפלגות של פלטים של $k$ קלטים שונים קרובה להתפלגות האחידה בנורמה $L_\infty$.
+
+בעבודה זו אנו חוקרים שיטות להגדלה של אי-תלות מוגבלת של משפחות פונקציות גיבוב.
+כלומר, בהנתן משפחה של פונקציות גיבוב כמעט $k$ בלתי-תלויה (או בלתי-מוטה), מטרתנו היא ליצור משפחה חדשה של משפחה  שהינה כמעט $k'$ בלתי-תלויה (או בלתי-מוטה) עבור $k' > k$.
+ההעתקות (טרנספורמציות) שלנו הינן כלליות במובן שהן מתייחסות אל משפחת פונקציות הגיבוב המקורית כאל קופסא שחורה וברוב המקרים אינן דורשות להניח דבר לגבי משפחה זו מעבר לתכונה הבסיסית של כמעט $k$ חוסר-תלות.
+למיטב ידיעתנו, שיטה כזו לא הייתה ידועה קודם לכן.
+
+בכדי להשיג את מטרותינו אנו משתמשים בדגימה חוזרת מהמשפחה המקורית וחיבור של הדגימות באמצעות פונקציה כלשהי.
+אנו מזהים שני סוגים של פונקציות שיעילות למטרה זו: הסוג הראשון הוא פונקציות אשר מקטימנות את המרחק בנורמה $L_\infty$ בין ההתפלגות של הפלטים להתפלגות האחידה; הסוג השני מאפשר לנו להגדיל את פרמטר האי-תלות $k$.
+לבסוף, אנו מחברים את שני סוגי הפונקציות הללו בתהליך איטרטיבי אשר בסופו של דבר משיג את התכונות הדרושות.
+\end{hebrew}
+\newpage
+
+\begin{hebrew}
+עבודה זו בוצעה בהדרכתו של אלון רוזן.
+העבודה מבוססת על מחקר משותף עם אנדרי בוגדנוב ואלון רוזן.
+\end{hebrew}
+
+\newpage
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.4\textwidth]{IDC_logo_hebrew}\par\vspace{2cm}
+	{\huge \begin{hebrew}{המרכז הבינתחומי הרצליה}\end{hebrew} \par}
+	{\Large \begin{hebrew}{בית הספר ארזי למדעי המחשב}\end{hebrew} \par}
+	{\Large \begin{hebrew}{התכנית לתואר שני (M.Sc.) - מסלול מחקרי}\end{hebrew} \par}
+	
+	\vspace{1cm}
+	
+	\vspace{1.5cm}
+	{\Huge \begin{hebrew} שיטה כללית להרחבה של אי-תלות מוגבלת \end{hebrew} \par}
+	\vspace{3cm}
+	{\large \begin{hebrew}{מאת}\end{hebrew}\par}
+	{\large\bfseries \begin{hebrew} ארבל דויטש פלד \end{hebrew} \par}
+	
+	\vspace{2cm}
+	
+	{\begin{hebrew}{עבודת תזה המוגשת כחלק מהדרישות לשם קבלת תואר מוסמך M.Sc.}\end{hebrew}\par}
+	{\begin{hebrew}{במסלול המחקרי בבית הספר אפי ארזי למדעי המחשב, המרכז הבינתחומי הרצליה}\end{hebrew}\par}
+	
+	\vfill
+	
+	% Bottom of the page
+	{\large\begin{hebrew}{ספטמבר 2016}\end{hebrew}\par}
+\end{titlepage}
+
 \end{document}
